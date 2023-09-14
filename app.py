@@ -70,8 +70,10 @@ def main():
             # Display the predictions
             if predictions is not None:
                 st.subheader("Predictions:")
-                # You can customize the output format based on your model's output
-                st.write(f"Probability of CKD: {predictions[0]:.2f}")
+                # Extract the numerical value from the NumPy array
+                prediction_value = predictions[0][0]  # Assuming predictions is a 2D array
+                # Format the prediction value as a string
+                st.write(f"Probability of CKD: {prediction_value:.2f}")
                 
 if __name__ == "__main__":
     main()
