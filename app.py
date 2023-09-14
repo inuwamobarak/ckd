@@ -30,7 +30,7 @@ def decode_labels(label):
 
 def main():
     # Set the title and description of the app
-    st.title("CKD Prediction App")
+    st.title("Chronic Kidney Disease Prediction App")
     st.write("This app predicts Chronic Kidney Disease (CKD) based on input features.")
 
     # Load the model
