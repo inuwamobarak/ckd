@@ -4,3 +4,4 @@ numpy
 scikit-learn
 keras
 tensorflow
+tensorflow-gpu==2.8.0
